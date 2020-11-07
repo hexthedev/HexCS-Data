@@ -45,7 +45,7 @@ namespace HexCS.Data.Generation.CSharp
 
             if (!SupressFileGeneration)
             {
-                PathString dir = Path.RemoveStep();
+                PathString dir = Path.RemoveAtEnd();
 
                 if (dir.TryAsDirectoryInfo(out DirectoryInfo dirInfo))
                 {

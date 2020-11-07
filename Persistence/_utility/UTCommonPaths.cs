@@ -29,7 +29,7 @@ namespace HexCS.Data.Persistence
         {
             try
             {
-                return new PathString(Environment.GetEnvironmentVariable("APPDATA").Split(Path.DirectorySeparatorChar));
+                return new PathString(Environment.GetEnvironmentVariable("APPDATA"));
             } catch (Exception e)
             {
                 return null;

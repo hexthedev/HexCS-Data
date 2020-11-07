@@ -114,7 +114,7 @@ namespace HexCS.Data.Persistence
         {
             PathString folder = _folderPaths[fileType];
 
-            PathString file = folder.AddStep($"{UTRandom.Int(int.MaxValue).ToString()}.data");
+            PathString file = folder.InsertAtEnd($"{UTRandom.Int(int.MaxValue).ToString()}.data");
             if (!file.TryAsFileInfo(out FileInfo info)) throw new IOException($"Failed to write file {file}");
 
             info.ForceEmptyOrCreate();
