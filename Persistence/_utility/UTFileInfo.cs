@@ -11,12 +11,15 @@ namespace HexCS.Data.Persistence
     public static class UTFileInfo
     {
         /// <summary>
-        /// Checks if a File exists, if it doesn't funciton creates it
+        /// Checks if a File exists, if it doesn't funciton creates it. Automatically creates 
+        /// folder structure if folder dosen't exist
         /// </summary>
         /// <param name="file"></param>
         /// <returns>True if file previously existed</returns>
         public static void ExistsOrCreate(this FileInfo file)
         {
+            file.Directory?.ExistsOrCreate();
+
             if (!file.Exists)
             {
                 using (file.Create()) { }
