@@ -13,14 +13,14 @@ namespace HexCSTests.Data
     {
         private const string _tempFolderName = "TobiasCS/Tests/GTFileTests";
 
-        private PathString _tempFolder = UTCommonPaths.AppDataPath.AddStep(_tempFolderName);
+        private PathString _tempFolder = UTCommonPaths.AppDataPath.InsertAtEnd(_tempFolderName);
 
         [Test]
         public void Works()
         {
             // Arrange
             StringBuilder sb = new StringBuilder();
-            PathString path = _tempFolder.AddStep("GTFileTestsWorks.txt");
+            PathString path = _tempFolder.InsertAtEnd("GTFileTestsWorks.txt");
 
             // Act
             using (GTDataModel_Public dm = new GTDataModel_Public(sb, path, Encoding.UTF8))

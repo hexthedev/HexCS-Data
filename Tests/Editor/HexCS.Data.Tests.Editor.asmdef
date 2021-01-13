@@ -1,10 +1,12 @@
 {
     "name": "HexCS.Data.Tests.Editor",
+    "rootNamespace": "",
     "references": [
         "GUID:ad04c35861a0f3d4395e5c37158c3399",
         "GUID:0acc523941302664db1f4e527237feb3",
         "GUID:27619889b8ba8c24980f49ee34dbb44a",
-        "GUID:d719ed6c32f33b045a7574634230e607"
+        "GUID:d719ed6c32f33b045a7574634230e607",
+        "GUID:9ed7445ed2032414daa881b0b38df473"
     ],
     "includePlatforms": [
         "Editor"
