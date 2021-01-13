@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using HexCS.Core;
 using HexCS.Data.Persistence;
-using Hex.Paths;
+using HexCS.Core;
 
 namespace HexCSTests.Data
 {

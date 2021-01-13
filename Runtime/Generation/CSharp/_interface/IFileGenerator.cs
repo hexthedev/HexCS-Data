@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Hex.Paths;
+using HexCS.Core;
 using HexCS.Data.Persistence;
 
 namespace HexCS.Data.Generation.CSharp

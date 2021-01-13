@@ -4,7 +4,7 @@ using System.Text;
 using NUnit.Framework;
 using HexCS.Data.Generation.CSharp;
 using HexCS.Data.Persistence;
-using Hex.Paths;
+using HexCS.Core;
 
 namespace HexCSTests.Data
 {

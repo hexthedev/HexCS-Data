@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using HexCS.Core;
-using Hex.Paths;
+using HexCS.Core;
 
 namespace HexCS.Data.Generation.CSharp
 {
