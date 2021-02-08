@@ -1,8 +1,5 @@
 ﻿using HexCS.Core;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
 
 namespace HexCS.Data.Persistence
 {
@@ -30,7 +27,7 @@ namespace HexCS.Data.Persistence
             try
             {
                 return new PathString(Environment.GetEnvironmentVariable("APPDATA"));
-            } catch (Exception e)
+            } catch (Exception)
             {
                 return null;
             }

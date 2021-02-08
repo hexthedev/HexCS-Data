@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
 using HexCS.Core;
 using HexCS.Data.Persistence;
-using HexCS.Core;
 
 namespace HexCSTests.Data
 {

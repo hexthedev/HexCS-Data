@@ -37,7 +37,7 @@ namespace HexCS.Data.Generation.CSharp
                 info.WriteString(content, Encoding);
                 return true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
             }
