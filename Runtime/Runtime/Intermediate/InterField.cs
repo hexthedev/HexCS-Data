@@ -483,5 +483,15 @@ namespace HexCS.Data.Runtime
 
             return null;
         }
+
+        public override int GetHashCode()
+        {
+            int hashCode = 247454643;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name);
+            hashCode = hashCode * -1521134295 + Type.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<object>.Default.GetHashCode(Object);
+            hashCode = hashCode * -1521134295 + IsArray.GetHashCode();
+            return hashCode;
+        }
     }
 }
