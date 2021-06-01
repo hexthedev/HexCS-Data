@@ -1,18 +1,1 @@
-{
-    "name": "com.hex.hexcs.data",
-    "version": "1.0.1",
-    "displayName": "HexCS",
-    "description": "Utilities for data",
-    "unity": "2019.4",
-    "unityRelease": "0f1",
-    "dependencies": {},
-    "keywords": [
-        "HexCS",
-        "Data"
-    ],
-    "author": {
-        "name": "James McCafferty",
-        "email": "jamesmccafferty@live.ca",
-        "url": "https://github.com/hexthedev/HexCS-Data"
-    }
-}
+{"name": "com.hex.hexcs.data", "version": "1.0.2", "displayName": "HexCS", "description": "Utilities for data", "unity": "2019.4", "unityRelease": "0f1", "dependencies": {}, "keywords": ["HexCS", "Data"], "author": {"name": "James McCafferty", "email": "jamesmccafferty@live.ca", "url": "https://github.com/hexthedev/HexCS-Data"}}
