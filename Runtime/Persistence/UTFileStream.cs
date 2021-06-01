@@ -18,5 +18,16 @@ namespace HexCS.Data.Persistence
         {
             stream.Write(encoding.GetBytes(text), 0, text.Length);
         }
+
+        /// <summary>
+        /// Read all text from a FileStream
+        /// </summary>
+        public static string ReadText(this FileStream stream)
+        {
+            using (StreamReader sr = new StreamReader(stream))
+            {
+                return sr.ReadToEnd();
+            }
+        }
     }
 }

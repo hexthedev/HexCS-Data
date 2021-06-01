@@ -62,5 +62,13 @@ namespace HexCS.Data.Runtime
 
             return true;
         }
+
+        public override int GetHashCode()
+        {
+            int hashCode = 1395271570;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name);
+            hashCode = hashCode * -1521134295 + EqualityComparer<InterField[]>.Default.GetHashCode(Fields);
+            return hashCode;
+        }
     }
 }
