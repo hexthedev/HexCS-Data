@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -62,6 +63,24 @@ namespace HexCS.Data.Persistence
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Traverses all folders that are children of the directory info and
+        /// does an action to all files found. This also does the action to 
+        /// all files directly children of the directory info
+        /// </summary>
+        public static void HierachyDo_Files(this DirectoryInfo dir, Action<FileInfo> action)
+        {
+            Queue<DirectoryInfo> toProcess = new Queue<DirectoryInfo>();
+            toProcess.Enqueue(dir);
+
+            while(toProcess.Count > 0)
+            {
+                DirectoryInfo target = toProcess.Dequeue();
+                foreach (FileInfo fi in target.EnumerateFiles()) action(fi);
+                foreach (DirectoryInfo di in target.EnumerateDirectories()) toProcess.Enqueue(di);
+            }
         }
         #endregion
     }
